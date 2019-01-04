@@ -52,6 +52,8 @@ public class StreamVsCollection {
         System.out.println(list2);
         System.out.println();
 
+        groupBy();
+
     }
 
     public static void groupBy() {
@@ -61,5 +63,10 @@ public class StreamVsCollection {
         Reward reward4 = new Reward("jin",5L,1);
         Reward reward5 = new Reward("jin",5L,1);
         Reward reward6 = new Reward("jin",5L,1);
+
+        List<Reward> list = new ArrayList<>();
+        list.stream().forEach(e -> System.out.println(1));
+
+
     }
 }
